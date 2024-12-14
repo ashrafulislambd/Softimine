@@ -10,7 +10,7 @@ def contact(request):
         form = QueryForm(request.POST)
         if form.is_valid():
             form.save()
-            return HttpResponse("Success")
+            return render(request, "core/success.html")
     else:
         form = QueryForm()
     return render(request, "core/index.html", {
