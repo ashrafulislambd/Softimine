@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Md. Ashraful Islam | Developer Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">Md. Ashraful Islam</h1>
+      <nav>
+        <a href="#services" class="mx-2 text-gray-600 hover:text-indigo-600">Services</a>
+        <!--<a href="#portfolio" class="mx-2 text-gray-600 hover:text-indigo-600">Portfolio</a>-->
+        <a href="#contact" class="mx-2 text-gray-600 hover:text-indigo-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-indigo-600 text-white py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-4">Web, Android, and Desktop App Development</h2>
+      <p class="text-lg mb-8">I create, sleek and efficient solutions for your digital needs. Starting from just $70</p>
+      <a href="{% url 'contact' %}" class="bg-white text-indigo-600 font-semibold py-2 px-6 rounded-full hover:bg-gray-200">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-8">My Services</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="bg-white p-6 shadow rounded-lg">
+          <h4 class="text-2xl font-semibold mb-4">Web Development</h4>
+          <p>Responsive and complex web application solving your business problems and more</p>
+        </div>
+        <div class="bg-white p-6 shadow rounded-lg">
+          <h4 class="text-2xl font-semibold mb-4">Android App Development</h4>
+          <p>High-performance Android applications for various purposes.</p>
+        </div>
+        <div class="bg-white p-6 shadow rounded-lg">
+          <h4 class="text-2xl font-semibold mb-4">Desktop App Development</h4>
+          <p>Powerful desktop applications for Windows, macOS, and Linux.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section 
+  <section id="portfolio" class="py-16">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-8">Portfolio</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-4 shadow rounded-lg">
+          <img src="https://via.placeholder.com/300x200" alt="Project 1" class="rounded mb-4">
+          <h4 class="font-semibold">Project 1</h4>
+          <p class="text-gray-600">Description of project 1.</p>
+        </div>
+        <div class="bg-white p-4 shadow rounded-lg">
+          <img src="https://via.placeholder.com/300x200" alt="Project 2" class="rounded mb-4">
+          <h4 class="font-semibold">Project 2</h4>
+          <p class="text-gray-600">Description of project 2.</p>
+        </div>
+        <div class="bg-white p-4 shadow rounded-lg">
+          <img src="https://via.placeholder.com/300x200" alt="Project 3" class="rounded mb-4">
+          <h4 class="font-semibold">Project 3</h4>
+          <p class="text-gray-600">Description of project 3.</p>
+        </div>
+      </div>
+    </div>
+  </section>-->
+
+  <!-- Testimonials Section 
+  <section class="bg-gray-50 py-16">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-8">Testimonials</h3>
+      <div class="max-w-3xl mx-auto">
+        <p class="italic text-gray-600">"Working with [Your Name] was a fantastic experience. The project was delivered on time, and the quality exceeded expectations!"</p>
+        <p class="font-semibold mt-4">- Happy Client</p>
+      </div>
+    </div>
+  </section>-->
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-indigo-600 text-white">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-4">Let's Work Together</h3>
+      <p class="mb-8">Ready to get started on your next project? Reach out to me!</p>
+      <a href="{% url 'contact' %}" class="bg-white text-indigo-600 font-semibold py-2 px-6 rounded-full hover:bg-gray-200">Get A Quote</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Md. Ashraful Islam. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
